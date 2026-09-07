@@ -80,7 +80,7 @@ if submit_button:
             with st.spinner("Generating your post..."):
                 response = client.chat.completions.create(
                     messages=[{"role": "user", "content": prompt}],
-                    model="llama-3.1-8b-instant",
+                    model="openai/gpt-oss-20b",
                     temperature=0.7,
                 )
                 
